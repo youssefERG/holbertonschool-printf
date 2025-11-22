@@ -1,0 +1,28 @@
+_PRINTF(3)                Library functions                _PRINTF(3)
+
+NAME
+       _printf - minimal printf implementation for Holberton project
+
+SYNOPSIS
+       #include "holberton.h"
+
+       int _printf(const char *format, ...);
+
+DESCRIPTION
+       _printf formats and sends output to the standard output (stdout).
+       This implementation supports the following conversion specifiers:
+           %c  - print single character
+           %s  - print string (NULL prints "(null)")
+           %%  - print percent sign
+           %d, %i - print signed decimal integer
+
+RETURN VALUE
+       On success, _printf returns the number of characters printed (excluding
+       the terminating null byte). On error, -1 is returned.
+
+NOTES
+       Output is performed using the write(2) system call. No support is
+       provided for flags, field width, precision, or length modifiers.
+
+AUTHOR
+       Implemented for Holberton project.
