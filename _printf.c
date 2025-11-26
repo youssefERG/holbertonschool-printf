@@ -34,10 +34,8 @@ int _printf(const char *format, ...)
 			p++;
 			continue;
 		}
-
-		/* found '%' */
 		p++;
-		if (*p == '\0') /* trailing '%' -> error */
+		if (*p == '\0')
 		{
 			va_end(ap);
 			return (-1);
@@ -69,7 +67,6 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			/* Unknown specifier: print '%' then char */
 			if (_putchar('%') < 0) { va_end(ap); return (-1); }
 			if (_putchar(*p) < 0) { va_end(ap); return (-1); }
 			total += 2;
