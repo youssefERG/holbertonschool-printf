@@ -20,7 +20,6 @@ int print_int(va_list ap)
 		if (_putchar('-') < 0)
 			return (-1);
 		len++;
-		/* safe conversion for INT_MIN */
 		val = (unsigned long)(-(n + 1)) + 1UL;
 	}
 	else
@@ -43,3 +42,4 @@ int print_int(va_list ap)
 
 	return (len);
 }
+/* after serching and writing and watching i can safely say...i still dont get it
