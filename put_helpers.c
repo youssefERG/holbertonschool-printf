@@ -34,3 +34,4 @@ int _write_buf(const char *buf, int len)
 	}
 	return (written);
 }
+/* helper file done (after a painfull 30 of trying to understand this ....)
