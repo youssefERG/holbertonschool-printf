@@ -9,3 +9,4 @@ int print_percent(void)
 {
 	return (_putchar('%'));
 }
+/* i wish the rest was this simple
