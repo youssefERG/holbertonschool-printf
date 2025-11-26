@@ -22,3 +22,4 @@ int print_string(va_list ap)
 
 	return (_write_buf(s, len));
 }
+/* 2 down 1 more to go
