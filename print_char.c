@@ -12,3 +12,4 @@ int print_char(va_list ap)
 
 	return (_putchar(c));
 }
+/* ik i made it clear that i hate C logic..........but i still have to say I HATE C LOGIC
